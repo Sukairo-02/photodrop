@@ -1,0 +1,14 @@
+{
+	"Server": {
+		"port": 3000
+	},
+	"Database": {
+		"dbPhotodrop": {
+			"host": "localhost",
+			"port": 5432,
+			"database": "photodrop",
+			"user": "postgres",
+			"password": "This-Is-The-Certified-DB-Password"
+		}
+	}
+}
