@@ -36,7 +36,10 @@ export const Album = pgTable('album', {
 export const Photo = pgTable('photo', {
 	id: uuid('id').defaultRandom().primaryKey().notNull(),
 	albumId: uuid('albumId').references(() => Album.id),
-	link: varchar('link').notNull(),
+	fullLink: varchar('full_link').notNull(),
+	thumbLink: varchar('thumb_link').notNull(),
+	markedLink: varchar('marked_link').notNull(),
+	markedThumbLink: varchar('marked_thumb_link').notNull(),
 	creationDate: date('creation_date').defaultNow().notNull()
 })
 
